@@ -4,7 +4,6 @@ import lxml.etree as ET
 
 from cumulusci.core.tasks import BaseTask
 from cumulusci.utils import cd
-from cumulusci.utils import elementtree_parse_file
 
 
 class RemoveElementsXPath(BaseTask):

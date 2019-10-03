@@ -8,8 +8,6 @@ from cumulusci.core.utils import process_bool_arg
 from cumulusci.tasks.salesforce import Deploy
 from cumulusci.utils import CUMULUSCI_PATH
 from cumulusci.utils import elementtree_parse_file
-from cumulusci.utils import findReplace
-from cumulusci.utils import findReplaceRegex
 
 
 class UpdateAdminProfile(Deploy):

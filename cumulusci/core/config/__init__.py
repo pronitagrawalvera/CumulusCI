@@ -20,7 +20,7 @@ class FlowConfig(BaseConfig):
     pass
 
 
-from cumulusci.core.config.OrgConfig import OrgConfig
+from cumulusci.core.config.OrgConfig import OrgConfig  # noqa: F401
 
 
 class ServiceConfig(BaseConfig):
@@ -33,14 +33,14 @@ class TaskConfig(BaseConfig):
     pass
 
 
-from cumulusci.core.config.BaseTaskFlowConfig import BaseTaskFlowConfig
+from cumulusci.core.config.BaseTaskFlowConfig import BaseTaskFlowConfig  # noqa: F401
 
 
 # inherit from BaseTaskFlowConfig
-from cumulusci.core.config.BaseProjectConfig import BaseProjectConfig
+from cumulusci.core.config.BaseProjectConfig import BaseProjectConfig  # noqa: F401
 
 # inherit from OrgConfig
-from cumulusci.core.config.ScratchOrgConfig import ScratchOrgConfig
+from cumulusci.core.config.ScratchOrgConfig import ScratchOrgConfig  # noqa: F401
 
 # inherit from BaseProjectConfig
-from cumulusci.core.config.BaseGlobalConfig import BaseGlobalConfig
+from cumulusci.core.config.BaseGlobalConfig import BaseGlobalConfig  # noqa: F401

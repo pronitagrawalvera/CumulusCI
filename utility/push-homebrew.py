@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 
-import os
 import sys
 
 from github3 import login
@@ -34,7 +33,7 @@ def create_branch(repo):
     head_sha = repo.ref("heads/master").object.sha
     branch_ref = f"refs/heads/{BRANCH_NAME}"
     print(f"Creating new branch from {head_sha[:8]} at {branch_ref}")
-    new_branch = repo.create_ref(branch_ref, head_sha)
+    repo.create_ref(branch_ref, head_sha)
 
 
 def read_formula():
